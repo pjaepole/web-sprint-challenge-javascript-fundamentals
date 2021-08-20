@@ -56,9 +56,14 @@ const zooAnimals = [
   Use animalNames to populate and return the displayNames array with only the animal name and scientific name of each animal. 
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
-
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  const displayNames=[];
+  function animalNames(zooAnimalscb){
+    
+    zooAnimalscb.forEach(function(item){
+   displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)
+   }
+   )
+   return displayNames;
   }
   
 
@@ -68,9 +73,13 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+  function lowerCaseNames(zooAnimalscb){
+    let lowercasenameanimal= zooAnimalscb.map(function(item){
+      return item.animal_name.toLowerCase();
+    }
+    )
+    return lowercasenameanimal;
+   }
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -78,8 +87,11 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(zooAnimalscb){
+    const newArray= zooAnimalscb.filter(function(item){
+      return item.population <5;
+    })
+    return newArray;
   }
   
 
