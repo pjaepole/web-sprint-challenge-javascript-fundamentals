@@ -37,9 +37,9 @@ callback function is a function that is passed into another function as argument
 windowbinding-when 'this' does not have any context to it, it will look up to window(global).
 implicit binding-when function is invoked it look to the left of the dot (.)
 explicit binding-we tell the code, context of 'this' by using .call .apply .bind 
-new binding-when we make new object out of constructor function using new keyword, 'this' refers to new object that is created
+new binding-when we make new object out of constructor function using new keyword, 'this' refers to new object that is created.
 5. Why do we need super() in an extended class?
- to inherit the prototype from parent class
+ to inherit the prototype from parent class.
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
